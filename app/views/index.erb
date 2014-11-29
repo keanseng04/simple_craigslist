@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Craig's List Jr.</h1>
+
+  <h2>Categories</h2>
+  <table>
+    <%Category.all.each do |l|%>
+    <tr>
+      <td><a href="/categories/<%=l.id%>/posts"><%=l.name%></a></td>
+    </tr>
+    <%end%>
+  </table>
+
+</body>
+</html>
